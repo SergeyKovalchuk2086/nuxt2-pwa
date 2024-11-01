@@ -267,7 +267,16 @@ export default {
 
   pwa: {
     meta: {
+      title: "TestTitle",
+      author: "Ya",
       mobileAppIOS: true,
+      theme_color: "red",
+    },
+    manifest: {
+      name: "TestNameManifest",
+      short_name: "TestManifest",
+      description: "none",
+      lang: "en",
     },
   },
 };
