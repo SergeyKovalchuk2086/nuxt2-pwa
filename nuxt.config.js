@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  buildDir: './.nuxt',
+  buildDir: '.nuxt',
   head: {
     title: "nuxt2-pwa",
     htmlAttrs: {
