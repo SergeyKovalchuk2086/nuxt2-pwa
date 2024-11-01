@@ -10,7 +10,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "nuxt2-pwa" },
       { name: "format-detection", content: "telephone=no" },
-      // { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "#205583" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -269,7 +269,7 @@ export default {
       title: "TestTitle",
       author: "Ya",
       mobileAppIOS: true,
-      theme_color: "red",
+      // theme_color: "red",
     },
     manifest: {
       name: "TestNameManifest",
