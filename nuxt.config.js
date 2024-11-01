@@ -15,6 +15,7 @@ export default {
       }, // продакт скинул
       { hid: "description", name: "description", content: "nuxt2-pwa" },
       { name: "format-detection", content: "telephone=no" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
     ],
     link: [
       // { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -151,12 +152,12 @@ export default {
       //   media:
       //     "(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)",
       // },
-      // {
-      //   rel: "apple-touch-startup-image",
-      //   href: "/static/screens/apple-splash-1284-2778.jpg",
-      //   media:
-      //     "(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)",
-      // },
+      {
+        rel: "apple-touch-startup-image",
+        href: "/screens/apple-splash-1284-2778.jpg",
+        media:
+          "(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)",
+      },
       // {
       //   rel: "apple-touch-startup-image",
       //   href: "/static/screens/apple-splash-2778-1284.jpg",
@@ -292,13 +293,6 @@ export default {
           src: "/screens/manifest-icon-512.maskable.png",
           sizes: "512x512",
           type: "image/png",
-        },
-      ],
-      splash_links: [
-        {
-          src: "/screens/apple-splash-640-1136.jpg",
-          sizes: "512x512",
-          type: "image/jpg",
         },
       ],
     },
