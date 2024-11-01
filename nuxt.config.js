@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  // target: "static",
+  target: "static",
   head: {
     title: "nuxt2-pwa",
     htmlAttrs: {
@@ -9,9 +9,9 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "nuxt2-pwa" },
       { name: "format-detection", content: "telephone=no" },
-      { name: "apple-mobile-web-app-capable", content: "yes" },
+      // { name: "apple-mobile-web-app-capable", content: "yes" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
