@@ -284,21 +284,21 @@ export default {
       useWebmanifestExtension: false,
       icons: [
         {
-          src: "/static/screens/manifest-icon-192.maskable.png",
+          src: "/screens/manifest-icon-192.maskable.png",
           sizes: "192x192",
           type: "image/png",
         },
         {
-          src: "/static/screens/manifest-icon-512.maskable.png",
+          src: "/screens/manifest-icon-512.maskable.png",
           sizes: "512x512",
           type: "image/png",
         },
       ],
       splash_links: [
         {
-          src: "/static/screens/manifest-icon-192.maskable.png",
+          src: "/screens/apple-splash-640-1136.jpg",
           sizes: "512x512",
-          type: "image/png",
+          type: "image/jpg",
         },
       ],
     },
