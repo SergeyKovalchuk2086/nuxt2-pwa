@@ -294,6 +294,13 @@ export default {
           type: "image/png",
         },
       ],
+      splash_links: [
+        {
+          src: "/static/screens/manifest-icon-192.maskable.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
     },
     meta: {
       theme_color: "#205583", // цвет челки
