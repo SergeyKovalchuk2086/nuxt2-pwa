@@ -270,13 +270,32 @@ export default {
 
   pwa: {
     icon: {
-      source: "/react-logo.png",
-      sizes: [64, 120, 144, 152, 192, 384, 512],
+      // Путь к вашим иконкам
+      source: "static/react-logo.png", // главный файл иконки
+      // размеры иконок
+      fileName: "react-logo.png",
+      // размеры для разных платформ
+      sizes: [192, 512],
+    },
+    manifest: {
+      name: "My App",
+      short_name: "MyApp",
+      lang: "en",
+      useWebmanifestExtension: false,
+      icons: [
+        {
+          src: "/static/screens/manifest-icon-192.maskable.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "/static/screens/manifest-icon-512.maskable.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
     },
     meta: {
-      title: "TestTitle",
-      author: "Ya",
-      // mobileAppIOS: true,
       theme_color: "#205583", // цвет челки
     },
   },
