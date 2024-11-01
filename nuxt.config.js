@@ -7,7 +7,12 @@ export default {
     },
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      // { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content:
+          "width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover",
+      }, // продакт скинул
       { hid: "description", name: "description", content: "nuxt2-pwa" },
       { name: "format-detection", content: "telephone=no" },
     ],
@@ -268,7 +273,7 @@ export default {
       title: "TestTitle",
       author: "Ya",
       // mobileAppIOS: true,
-      theme_color: "#205583",
+      theme_color: "#205583", // цвет челки
     },
   },
 };
