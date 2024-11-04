@@ -265,6 +265,7 @@ export default {
       name: "My App",
       short_name: "MyApp",
       lang: "en",
+      useWebmanifestExtension: false,
       icons: [
         {
           src: "/screens/manifest-icon-192.maskable.png",
