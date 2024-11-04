@@ -252,32 +252,32 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/pwa"],
+  // buildModules: ["@nuxtjs/pwa"],
   pwa: {
-    icon: {
-      iosSizes: [],
-    },
-    meta: {
-      mobileAppIOS: false,
-      theme_color: "#205583",
-    },
-    manifest: {
-      name: "My App",
-      short_name: "MyApp",
-      lang: "en",
-      useWebmanifestExtension: false,
-      icons: [
-        {
-          src: "/screens/manifest-icon-192.maskable.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "/screens/manifest-icon-512.maskable.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-      ],
-    },
+    // icon: {
+    //   iosSizes: [],
+    // },
+    // meta: {
+    //   mobileAppIOS: false,
+    //   theme_color: "#205583",
+    // },
+    // manifest: {
+    //   name: "My App",
+    //   short_name: "MyApp",
+    //   lang: "en",
+    //   useWebmanifestExtension: false,
+    //   icons: [
+    //     {
+    //       src: "/screens/manifest-icon-192.maskable.png",
+    //       sizes: "192x192",
+    //       type: "image/png",
+    //     },
+    //     {
+    //       src: "/screens/manifest-icon-512.maskable.png",
+    //       sizes: "512x512",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
   },
 };
