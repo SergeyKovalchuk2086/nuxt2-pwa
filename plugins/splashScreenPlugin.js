@@ -1,5 +1,7 @@
 export default (ctx) => {
-  console.log("ctx :", ctx);
+  if (!ctx.app.head.meta) ctx.app.head.meta = [];
+  if (!ctx.app.head.link) ctx.app.head.link = [];
+
   const metaData = [
     {
       name: "mobile-web-app-capable",
@@ -218,15 +220,15 @@ export default (ctx) => {
     const link = {
       rel: "apple-touch-startup-image",
       media: splash.media,
-      href: `/screens/${splash.filename}`,
+      href: `${splash.href}`,
     };
 
-    ctx.app.head.link = [...ctx.app.head.link, link];
+    ctx.app.head.link.push(link);
   }
   const appleTouchLink = {
     rel: "apple-touch-icon",
     href: "/screens/apple-icon-180.png",
   };
 
-  ctx.app.head.link = [...ctx.app.head.link, appleTouchLink];
+  ctx.app.head.link.push(appleTouchLink);
 };
