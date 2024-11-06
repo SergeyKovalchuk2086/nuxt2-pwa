@@ -250,7 +250,7 @@ export default {
     ],
   },
   components: true,
-  plugins: [{ src: "plugins/splashScreenPlugin.js", mode: "server" }],
+  plugins: [{ src: "plugins/splashScreenPlugin.js", mode: "all" }],
   // buildModules: ["@nuxtjs/pwa"],
   // pwa: {
   // icon: {
