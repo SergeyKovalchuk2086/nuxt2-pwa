@@ -12,9 +12,9 @@ export default {
       },
       { hid: "description", name: "description", content: "nuxt2-pwa" },
       { name: "format-detection", content: "telephone=no" },
-      { name: "mobile-web-app-capable", content: "yes" },
-      { name: "apple-touch-fullscreen", content: "yes" },
-      { name: "apple-mobile-web-app-capable", content: "yes" },
+      // { name: "mobile-web-app-capable", content: "yes" },
+      // { name: "apple-touch-fullscreen", content: "yes" },
+      // { name: "apple-mobile-web-app-capable", content: "yes" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
