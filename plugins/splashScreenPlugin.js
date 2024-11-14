@@ -14,13 +14,6 @@ export default (ctx) => {
     },
   ];
 
-  const manifestLink = {
-    rel: "manifest",
-    href: "/manifest.json",
-  };
-
-  ctx.app.head.link = [...ctx.app.head.link, manifestLink];
-
   for (const data of metaData) {
     const meta = {
       name: data.name,
