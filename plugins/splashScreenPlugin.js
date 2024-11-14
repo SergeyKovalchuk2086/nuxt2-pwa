@@ -3,16 +3,23 @@ export default (ctx) => {
   if (!ctx.app.head.link) ctx.app.head.link = [];
 
   const metaData = [
-    {
-      name: "mobile-web-app-capable",
-    },
-    {
-      name: "apple-touch-fullscreen",
-    },
+    // {
+    //   name: "mobile-web-app-capable",
+    // },
+    // {
+    //   name: "apple-touch-fullscreen",
+    // },
     {
       name: "apple-mobile-web-app-capable",
     },
   ];
+
+  const manifestLink = {
+    rel: "manifest",
+    href: "/manifest.json",
+  };
+
+  ctx.app.head.link = [...ctx.app.head.link, manifestLink];
 
   for (const data of metaData) {
     const meta = {
